@@ -50,9 +50,9 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
       </Link>
 
-      <div className="p-4">
+      <div className="p-3 sm:p-4">
         <Link href={`/shop?product=${product.slug}`}>
-          <h3 className="text-sm font-medium text-gray-900 line-clamp-2 min-h-[2.5rem] hover:text-[#1B5E20] transition-colors">
+          <h3 className="text-xs sm:text-sm font-medium text-gray-900 line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem] hover:text-[#1B5E20] transition-colors">
             {product.name}
           </h3>
         </Link>
@@ -71,9 +71,9 @@ export function ProductCard({ product }: ProductCardProps) {
         <div className="mt-3 flex items-center gap-2">
           <Button
             onClick={handleOrderNow}
-            className="flex-1 bg-[#1B5E20] hover:bg-[#0D3B10] text-sm"
+            className="flex-1 bg-[#1B5E20] hover:bg-[#0D3B10] text-xs sm:text-sm py-2 sm:py-2.5"
           >
-            <ShoppingCart className="w-4 h-4 mr-1.5" />
+            <ShoppingCart className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1 sm:mr-1.5" />
             <span className="hidden sm:inline">অর্ডার করুন</span>
             <span className="sm:hidden">কিনুন</span>
           </Button>
