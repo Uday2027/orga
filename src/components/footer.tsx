@@ -121,7 +121,7 @@ export function Footer() {
           <p>© {new Date().getFullYear()} সর্বস্বত্ব সংরক্ষিত {APP_NAME}</p>
           <p>
             ডেভেলপড বাই{' '}
-            <span className="text-white font-medium">কার্টু ডিজিটাল</span>
+            <span className="text-white font-medium">INFINITON TECH</span>
           </p>
           <div className="flex items-center gap-3">
             <Link href="#" className="hover:text-white transition-colors">
