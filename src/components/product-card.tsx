@@ -68,23 +68,21 @@ export function ProductCard({ product }: ProductCardProps) {
           )}
         </div>
 
-        <div className="mt-3 flex items-center gap-2">
+        <div className="mt-3 flex flex-col sm:flex-row items-stretch gap-1.5 sm:gap-2">
           <Button
             onClick={handleOrderNow}
-            className="flex-1 bg-[#1B5E20] hover:bg-[#0D3B10] text-[10px] sm:text-sm py-1.5 sm:py-2.5 rounded-full"
+            className="w-full sm:flex-1 bg-[#1B5E20] hover:bg-[#0D3B10] text-xs sm:text-sm py-2 sm:py-2.5 rounded-full"
           >
-            <ShoppingCart className="w-3 h-3 sm:w-4 sm:h-4 mr-0.5 sm:mr-1.5" />
-            <span className="hidden sm:inline">অর্ডার করুন</span>
-            <span className="sm:hidden">অর্ডার</span>
+            <ShoppingCart className="w-4 h-4 mr-1.5" />
+            অর্ডার করুন
           </Button>
           <Button
             variant="outline"
             onClick={handleAddToCart}
-            className="flex-1 border-[#1B5E20] text-[#1B5E20] hover:bg-[#1B5E20] hover:text-white text-[10px] sm:text-sm py-1.5 sm:py-2.5 rounded-full"
+            className="w-full sm:w-auto sm:flex-1 border-[#1B5E20] text-[#1B5E20] hover:bg-[#1B5E20] hover:text-white text-xs sm:text-sm py-2 sm:py-2.5 rounded-full"
           >
-            <ShoppingCart className="w-3 h-3 sm:w-4 sm:h-4 mr-0.5 sm:mr-1.5" />
-            <span className="hidden sm:inline">কার্টে যোগ করুন</span>
-            <span className="sm:hidden">কার্ট</span>
+            <ShoppingCart className="w-4 h-4 mr-1.5" />
+            কার্টে যোগ করুন
           </Button>
         </div>
       </div>
