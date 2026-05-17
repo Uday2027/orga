@@ -79,7 +79,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <Button
             variant="outline"
             onClick={handleAddToCart}
-            className="w-full sm:w-auto sm:flex-1 border-[#1B5E20] text-[#1B5E20] hover:bg-[#1B5E20] hover:text-white text-xs sm:text-sm py-2.5 px-4 sm:py-2.5 sm:px-6 rounded-full"
+            className="w-full sm:w-auto sm:flex-1 border-[#1B5E20] text-[#1B5E20] hover:bg-[#1B5E20] hover:text-white text-xs sm:text-sm py-2.5 px-6 sm:py-2.5 sm:px-8 rounded-full"
           >
             <ShoppingCart className="w-4 h-4 mr-1.5" />
             কার্টে যোগ করুন
