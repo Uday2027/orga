@@ -74,13 +74,14 @@ export function ProductCard({ product }: ProductCardProps) {
             className="flex-1 bg-[#1B5E20] hover:bg-[#0D3B10] text-sm"
           >
             <ShoppingCart className="w-4 h-4 mr-1.5" />
-            অর্ডার করুন
+            <span className="hidden sm:inline">অর্ডার করুন</span>
+            <span className="sm:hidden">কিনুন</span>
           </Button>
           <Button
             variant="outline"
             size="icon"
             onClick={handleAddToCart}
-            className="border-gray-200 hover:border-[#1B5E20] hover:text-[#1B5E20]"
+            className="hidden sm:flex border-gray-200 hover:border-[#1B5E20] hover:text-[#1B5E20]"
           >
             <ShoppingCart className="w-4 h-4" />
           </Button>
