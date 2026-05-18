@@ -73,16 +73,16 @@ export function ProductCard({ product }: ProductCardProps) {
             onClick={handleOrderNow}
             className="w-full sm:flex-1 bg-[#1B5E20] hover:bg-[#0D3B10] text-xs sm:text-sm py-2 sm:py-2.5 rounded-full"
           >
-            <ShoppingCart className="w-4 h-4 mr-1.5" />
-            অর্ডার করুন
+            <ShoppingCart className="w-4 h-4 mr-1.5 shrink-0" />
+            <span className="truncate">অর্ডার করুন</span>
           </Button>
           <Button
             variant="outline"
             onClick={handleAddToCart}
-            className="w-full sm:w-auto sm:flex-1 border-[#1B5E20] text-[#1B5E20] hover:bg-[#1B5E20] hover:text-white text-xs sm:text-sm py-2.5 px-6 sm:py-2.5 sm:px-8 rounded-full"
+            className="w-full sm:flex-1 border-[#1B5E20] text-[#1B5E20] hover:bg-[#1B5E20] hover:text-white text-xs sm:text-sm py-2.5 px-4 sm:py-2.5 sm:px-4 rounded-full"
           >
-            <ShoppingCart className="w-4 h-4 mr-1.5" />
-            কার্টে যোগ করুন
+            <ShoppingCart className="w-4 h-4 mr-1.5 shrink-0" />
+            <span className="truncate">কার্টে যোগ করুন</span>
           </Button>
         </div>
       </div>
